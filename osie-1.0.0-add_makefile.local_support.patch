@@ -1,0 +1,8 @@
+--- ./Makefile.orig	2011-01-26 09:24:50.000000000 +0100
++++ ./Makefile	2011-01-26 09:25:03.000000000 +0100
+@@ -57,4 +57,5 @@ clean:
+ mrproper: clean
+ 	$(Q)rm -rf $(BUNDLE_DIR) $(BUNDLES_DIR)
+ 
++include Makefile.local
+ include Makefile.bundle
