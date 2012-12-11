@@ -44,3 +44,10 @@ rm -rf %{buildroot}
 %doc docs/readme.txt changelog.txt
 %{_bindir}/%{name}
 %{_mandir}/man1/%{name}.1.*
+
+
+%changelog
+* Wed Jan 26 2011 Jani Välimaa <wally@mandriva.org> 1.0.0-1mdv2011.0
++ Revision: 632924
+- imported package osie
+
