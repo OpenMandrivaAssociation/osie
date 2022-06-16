@@ -34,8 +34,9 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc docs/readme.txt changelog.txt
-#{_bindir}/%{name}
-#{_mandir}/man1/%{name}.1.*
+%doc %{_datadir}/doc/osie/COPYING
+%{_bindir}/%{name}
+%{_mandir}/man1/osie.1.*
 
 
 %changelog
