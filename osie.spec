@@ -15,7 +15,7 @@ stored in OpenTTD's PNG screenshots such as the version, NewGRFs and AIs.
 %prep
 %autosetup -p1
 
-cat >> Makefile.local << EOF
+cat >> Makefile.bundle << EOF
 prefix = %{_prefix}
 DO_NOT_INSTALL_CHANGELOG = 1
 DO_NOT_INSTALL_LICENSE = 1
