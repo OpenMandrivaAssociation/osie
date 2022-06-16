@@ -34,8 +34,8 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc docs/readme.txt changelog.txt
-%{_bindir}/%{name}
-%{_mandir}/man1/%{name}.1.*
+#{_bindir}/%{name}
+#{_mandir}/man1/%{name}.1.*
 
 
 %changelog
