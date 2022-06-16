@@ -1,10 +1,6 @@
-%define name	osie
-%define version	1.0.0
-%define release	2
-
-Name:		%{name}
-Version:	%{version}
-Release:	%mkrel %{release}
+Name:		osie
+Version:	1.0.0
+Release:	3
 Summary:	OpenTTD screenshot information extractor
 Group:          Graphics
 License:	GPLv2
@@ -18,7 +14,7 @@ osie (OpenTTD screenshot information extractor) extracts the information
 stored in OpenTTD's PNG screenshots such as the version, NewGRFs and AIs.
 
 %prep
-%setup -q
+%autosetup
 %patch0 -p0 -b .addlocalsupport
 
 cat >> Makefile.local << EOF
@@ -30,14 +26,12 @@ EOF
 
 %build
 %setup_compile_flags
-%make VERBOSE=1
+%make_build VERBOSE=1
 
 %install
 rm -rf %{buildroot}
-%makeinstall_std
+%make_install
 
-%clean
-rm -rf %{buildroot}
 
 %files
 %defattr(-,root,root)
