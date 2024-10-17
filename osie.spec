@@ -4,7 +4,7 @@ Release:	3
 Summary:	OpenTTD screenshot information extractor
 Group:          Graphics
 License:	GPLv2
-Url:		http://www.openttd.org/
+Url:		https://www.openttd.org/
 Source0:	http://ftp.snt.utwente.nl/pub/games/openttd/binaries/extra/%{name}/%{version}/%{name}-%{version}-source.tar.gz
 BuildRequires:	png-devel
 
