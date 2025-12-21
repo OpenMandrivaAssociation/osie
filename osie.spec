@@ -6,6 +6,7 @@ Group:          Graphics
 License:	GPLv2
 Url:		https://www.openttd.org/
 Source0:	http://ftp.snt.utwente.nl/pub/games/openttd/binaries/extra/%{name}/%{version}/%{name}-%{version}-source.tar.gz
+BuildRequires:	make
 BuildRequires:	png-devel
 
 %description
